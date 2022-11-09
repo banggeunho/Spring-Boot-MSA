@@ -1,0 +1,121 @@
+version: '3'
+services:
+
+
+  discovery:
+    image: qkdrmsgh73/service-discovery
+    container_name: service-discovery
+    build:
+      context: ./containerized-discovery
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    volumes:
+      - ./logs/discovery:/log
+    networks:
+      - msa
+
+  gateway:
+    image: qkdrmsgh73/service-gateway
+    container_name: service-gateway
+    build:
+      context: ./containerized-gateway
+      dockerfile: Dockerfile
+    ports:
+      - "8762:8762"
+    volumes:
+      - ./logs/gateway:/log
+    networks:
+      - msa
+
+  accounts:
+    image: qkdrmsgh73/service-accounts-api
+    container_name: service-accounts
+    build:
+      context: ./containerized-accounts
+      dockerfile: Dockerfile
+    ports:
+      - "7500:2222"
+    volumes:
+      - ./logs/accounts:/log
+    networks:
+      - msa
+
+  products:
+    image: qkdrmsgh73/service-products-api
+    container_name: service-products
+    build:
+      context: ./containerized-products
+      dockerfile: Dockerfile
+    ports:
+      - "7501:2222"
+    depends_on:
+      - discovery
+      - accounts
+    volumes:
+      - ./logs/products:/log
+    networks:
+      - msa
+
+  orders:
+    image: qkdrmsgh73/service-orders-api
+    container_name: service-orders
+    build:
+      context: ./containerized-orders
+      dockerfile: Dockerfile
+    ports:
+      - "7502:2222"
+    depends_on:
+      - discovery
+      - products
+    volumes:
+      - ./logs/orders:/log
+    networks:
+      - msa
+
+  main:
+    image: qkdrmsgh73/service-main-api
+    container_name: service-main
+    build:
+      context: ./containerized-main
+      dockerfile: Dockerfile
+    ports:
+      - "7503:2222"
+    depends_on:
+      - discovery
+      - orders
+    volumes:
+      - ./logs/main:/log
+    networks:
+      - msa
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - 9090:9090
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    volumes:
+      - ./containerized-prometheus/config/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - 3000:3000
+    user: "104"
+
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: service-zipkin
+    ports:
+      - 9411:9411
+    networks:
+      - msa
+
+networks:
+  msa:
+    driver: bridge
+    external: true
+    internal: true

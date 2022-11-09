@@ -1,0 +1,759 @@
+2022-11-09 13:48:31.937  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Starting ContainerizedGatewayApplication v2.0.0 using Java 11.0.16 on 2d9750e84489 with PID 1 (/containerized-gateway.jar started by root in /)
+2022-11-09 13:48:32.078  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : No active profile set, falling back to default profiles: default
+2022-11-09 13:48:52.253  INFO [containerized-gateway,,] 1 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b94d7296-8abc-3464-bcda-1b437b80392f
+2022-11-09 13:48:55.600  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 13:48:55.751  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 13:48:55.873  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 13:49:09.882  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-11-09 13:49:10.042  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-11-09 13:49:10.190  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-11-09 13:49:10.317  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-11-09 13:49:10.405  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-11-09 13:49:10.531  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-11-09 13:49:10.701  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-11-09 13:49:10.760  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-11-09 13:49:10.902  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-11-09 13:49:10.989  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-11-09 13:49:11.131  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-11-09 13:49:11.223  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-11-09 13:49:11.350  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-11-09 13:49:15.577  INFO [containerized-gateway,,] 1 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2022-11-09 13:49:18.693  INFO [containerized-gateway,,] 1 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-11-09 13:49:19.909  WARN [containerized-gateway,,] 1 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-09 13:49:20.298  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-09 13:49:21.171  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-09 13:49:21.503  INFO [containerized-gateway,,] 1 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 13:49:21.871  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 13:49:21.954  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 13:49:22.055  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 13:49:22.158  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 13:49:22.218  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 13:49:22.303  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-09 13:49:22.319  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 13:49:27.344  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 13:49:27.449  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Not registering with Eureka server per configuration
+2022-11-09 13:49:27.676  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1668001767659 with initial instances count: 0
+2022-11-09 13:49:27.853  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CONTAINERIZED-GATEWAY with eureka with status UP
+2022-11-09 13:49:29.538  INFO [containerized-gateway,,] 1 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8762
+2022-11-09 13:49:29.699  INFO [containerized-gateway,,] 1 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8762
+2022-11-09 13:49:30.853  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Started ContainerizedGatewayApplication in 67.094 seconds (JVM running for 72.032)
+2022-11-09 13:49:57.628  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 13:49:57.963  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 13:49:58.139  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 13:49:58.182  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 13:49:58.242  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 13:49:58.261  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-11-09 13:49:58.291  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 13:49:59.227  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 13:50:32.134  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 13:50:32.230  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 13:50:32.261  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 13:50:32.275  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 13:50:32.299  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 13:50:32.487  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-11-09 13:50:32.933  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 13:51:34.686  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 13:51:30.604  WARN [containerized-gateway,,] 1 --- [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor timed out
+
+java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2022-11-09 13:52:15.252  WARN [containerized-gateway,,] 1 --- [AsyncReporter{RestTemplateSender{http://zipkin:9411/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2022-11-09 13:52:15.792  WARN [containerized-gateway,,] 1 --- [AsyncReporter{RestTemplateSender{http://zipkin:9411/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://zipkin:9411/api/v2/spans": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://zipkin:9411/api/v2/spans": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.cloud.sleuth.zipkin2.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateWrapper.java:69)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:660)
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.post(RestTemplateSender.java:151)
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:169)
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:159)
+	at zipkin2.Call$Base.execute(Call.java:391)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:292)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:788)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:723)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1615)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at org.springframework.http.client.SimpleClientHttpResponse.getRawStatusCode(SimpleClientHttpResponse.java:55)
+	at org.springframework.web.client.DefaultResponseErrorHandler.hasError(DefaultResponseErrorHandler.java:64)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:807)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	... 9 common frames omitted
+
+2022-11-09 13:52:59.151  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CONTAINERIZED-GATEWAY with eureka with status DOWN
+2022-11-09 14:08:11.456  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Starting ContainerizedGatewayApplication v2.0.0 using Java 11.0.16 on d60895e2fb35 with PID 1 (/containerized-gateway.jar started by root in /)
+2022-11-09 14:08:11.487  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : No active profile set, falling back to default profiles: default
+2022-11-09 14:16:01.168  INFO [containerized-gateway,,] 1 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b94d7296-8abc-3464-bcda-1b437b80392f
+2022-11-09 14:16:02.947  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:16:02.955  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:16:02.969  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:16:10.130  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-11-09 14:16:10.139  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-11-09 14:16:10.144  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-11-09 14:16:10.146  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-11-09 14:16:10.155  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-11-09 14:16:10.158  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-11-09 14:16:10.166  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-11-09 14:16:10.173  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-11-09 14:16:10.191  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-11-09 14:16:10.194  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-11-09 14:16:10.201  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-11-09 14:16:10.203  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-11-09 14:16:10.205  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-11-09 14:16:12.574  INFO [containerized-gateway,,] 1 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2022-11-09 14:16:16.276  INFO [containerized-gateway,,] 1 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-11-09 14:16:16.859  WARN [containerized-gateway,,] 1 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-09 14:16:17.128  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-09 14:16:17.584  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-09 14:16:17.611  INFO [containerized-gateway,,] 1 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 14:16:17.706  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 14:16:17.709  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 14:16:17.711  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 14:16:17.713  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 14:16:17.715  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 14:16:17.716  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-09 14:16:17.718  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 14:16:19.677  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 14:16:19.708  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Not registering with Eureka server per configuration
+2022-11-09 14:16:19.749  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1668003379742 with initial instances count: 0
+2022-11-09 14:16:19.785  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CONTAINERIZED-GATEWAY with eureka with status UP
+2022-11-09 14:16:20.809  INFO [containerized-gateway,,] 1 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8762
+2022-11-09 14:16:20.815  INFO [containerized-gateway,,] 1 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8762
+2022-11-09 14:16:20.958  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Started ContainerizedGatewayApplication in 493.956 seconds (JVM running for 499.396)
+2022-11-09 14:16:49.732  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 14:16:49.745  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 14:16:49.747  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 14:16:49.750  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 14:16:49.751  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 14:16:49.758  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-11-09 14:16:49.759  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 14:16:49.827  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 14:18:01.693  WARN [containerized-gateway,,] 1 --- [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor timed out
+
+java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2022-11-09 14:18:10.557  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CONTAINERIZED-GATEWAY with eureka with status DOWN
+2022-11-09 14:18:46.184  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Starting ContainerizedGatewayApplication v2.0.0 using Java 11.0.16 on d60895e2fb35 with PID 1 (/containerized-gateway.jar started by root in /)
+2022-11-09 14:18:46.203  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : No active profile set, falling back to default profiles: default
+2022-11-09 14:19:02.572  INFO [containerized-gateway,,] 1 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b94d7296-8abc-3464-bcda-1b437b80392f
+2022-11-09 14:19:05.976  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:19:06.000  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:19:06.046  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:19:13.298  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-11-09 14:19:13.304  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-11-09 14:19:13.308  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-11-09 14:19:13.311  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-11-09 14:19:13.316  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-11-09 14:19:13.319  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-11-09 14:19:13.324  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-11-09 14:19:13.330  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-11-09 14:19:13.332  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-11-09 14:19:13.356  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-11-09 14:19:13.365  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-11-09 14:19:13.367  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-11-09 14:19:13.369  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-11-09 14:19:16.311  INFO [containerized-gateway,,] 1 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2022-11-09 14:19:18.339  INFO [containerized-gateway,,] 1 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-11-09 14:19:18.950  WARN [containerized-gateway,,] 1 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-09 14:19:19.259  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-09 14:19:20.124  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-09 14:19:20.179  INFO [containerized-gateway,,] 1 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 14:19:20.303  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 14:19:20.307  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 14:19:20.310  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 14:19:20.314  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 14:19:20.322  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 14:19:20.327  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-09 14:19:20.329  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 14:19:22.875  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 14:19:22.900  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Not registering with Eureka server per configuration
+2022-11-09 14:19:22.910  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1668003562909 with initial instances count: 0
+2022-11-09 14:19:22.949  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CONTAINERIZED-GATEWAY with eureka with status UP
+2022-11-09 14:19:23.711  INFO [containerized-gateway,,] 1 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8762
+2022-11-09 14:19:23.718  INFO [containerized-gateway,,] 1 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8762
+2022-11-09 14:19:23.889  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Started ContainerizedGatewayApplication in 44.463 seconds (JVM running for 47.635)
+2022-11-09 14:19:52.902  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 14:19:52.910  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 14:19:52.911  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 14:19:52.921  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 14:19:52.924  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 14:19:52.926  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-11-09 14:19:52.928  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 14:19:53.021  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 14:22:50.133  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CONTAINERIZED-GATEWAY with eureka with status DOWN
+2022-11-09 14:22:53.379  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-09 14:22:53.390  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-09 14:28:55.558  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Starting ContainerizedGatewayApplication v2.0.0 using Java 11.0.16 on 28839b5d0560 with PID 1 (/containerized-gateway.jar started by root in /)
+2022-11-09 14:28:55.571  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : No active profile set, falling back to default profiles: default
+2022-11-09 14:29:05.908  INFO [containerized-gateway,,] 1 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b94d7296-8abc-3464-bcda-1b437b80392f
+2022-11-09 14:29:07.494  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:29:07.507  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:29:07.531  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:29:13.540  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-11-09 14:29:13.544  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-11-09 14:29:13.548  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-11-09 14:29:13.550  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-11-09 14:29:13.566  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-11-09 14:29:13.570  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-11-09 14:29:13.573  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-11-09 14:29:13.574  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-11-09 14:29:13.576  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-11-09 14:29:13.578  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-11-09 14:29:13.587  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-11-09 14:29:13.588  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-11-09 14:29:13.589  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-11-09 14:29:16.568  INFO [containerized-gateway,,] 1 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2022-11-09 14:29:19.537  INFO [containerized-gateway,,] 1 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-11-09 14:29:20.040  WARN [containerized-gateway,,] 1 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-09 14:29:20.313  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-09 14:29:20.776  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-09 14:29:20.804  INFO [containerized-gateway,,] 1 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 14:29:20.861  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 14:29:20.864  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 14:29:20.865  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 14:29:20.871  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 14:29:20.872  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 14:29:20.873  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-09 14:29:20.874  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 14:29:22.884  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 14:29:22.899  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Not registering with Eureka server per configuration
+2022-11-09 14:29:22.977  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1668004162948 with initial instances count: 0
+2022-11-09 14:29:22.998  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CONTAINERIZED-GATEWAY with eureka with status UP
+2022-11-09 14:29:23.906  INFO [containerized-gateway,,] 1 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8762
+2022-11-09 14:29:23.922  INFO [containerized-gateway,,] 1 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8762
+2022-11-09 14:29:24.066  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Started ContainerizedGatewayApplication in 31.979 seconds (JVM running for 36.48)
+2022-11-09 14:29:52.902  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 14:29:52.907  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 14:29:52.910  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 14:29:52.913  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 14:29:52.914  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 14:29:52.916  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-11-09 14:29:52.916  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 14:29:52.968  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 14:30:23.090  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery:8761/eureka/} exception=I/O error on GET request for "http://discovery:8761/eureka/apps/delta": discovery: Name or service not known; nested exception is java.net.UnknownHostException: discovery: Name or service not known stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://discovery:8761/eureka/apps/delta": discovery: Name or service not known; nested exception is java.net.UnknownHostException: discovery: Name or service not known
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.UnknownHostException: discovery: Name or service not known
+	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1378)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+
+2022-11-09 14:30:23.094  WARN [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://discovery:8761/eureka/apps/delta": discovery: Name or service not known; nested exception is java.net.UnknownHostException: discovery: Name or service not known
+2022-11-09 14:30:23.142  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery:8761/eureka/}, exception=I/O error on GET request for "http://discovery:8761/eureka/apps/delta": discovery; nested exception is java.net.UnknownHostException: discovery stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://discovery:8761/eureka/apps/delta": discovery; nested exception is java.net.UnknownHostException: discovery
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.UnknownHostException: discovery
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1378)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 23 more
+
+2022-11-09 14:30:23.189  WARN [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://discovery:8761/eureka/apps/delta": discovery; nested exception is java.net.UnknownHostException: discovery
+2022-11-09 14:30:23.193  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONTAINERIZED-GATEWAY/28839b5d0560:containerized-gateway:8762 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2022-11-09 14:30:27.176  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CONTAINERIZED-GATEWAY with eureka with status DOWN
+2022-11-09 14:30:30.213  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-09 14:30:30.222  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-09 14:37:00.395  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Starting ContainerizedGatewayApplication v2.0.0 using Java 11.0.16 on 5e9fa2edf55d with PID 1 (/containerized-gateway.jar started by root in /)
+2022-11-09 14:37:00.403  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : No active profile set, falling back to default profiles: default
+2022-11-09 14:37:08.086  INFO [containerized-gateway,,] 1 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b94d7296-8abc-3464-bcda-1b437b80392f
+2022-11-09 14:37:09.823  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:37:09.833  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:37:09.847  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:37:15.085  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-11-09 14:37:15.089  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-11-09 14:37:15.091  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-11-09 14:37:15.092  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-11-09 14:37:15.098  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-11-09 14:37:15.099  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-11-09 14:37:15.101  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-11-09 14:37:15.103  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-11-09 14:37:15.104  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-11-09 14:37:15.105  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-11-09 14:37:15.108  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-11-09 14:37:15.110  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-11-09 14:37:15.112  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-11-09 14:37:16.945  INFO [containerized-gateway,,] 1 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2022-11-09 14:37:18.213  WARN [containerized-gateway,,] 1 --- [main] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://zipkin:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://zipkin:9411/api/v2/spans": zipkin; nested exception is java.net.UnknownHostException: zipkin}]
+2022-11-09 14:37:18.841  INFO [containerized-gateway,,] 1 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-11-09 14:37:19.276  WARN [containerized-gateway,,] 1 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-09 14:37:19.425  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-09 14:37:19.879  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-09 14:37:19.917  INFO [containerized-gateway,,] 1 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 14:37:20.064  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 14:37:20.075  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 14:37:20.078  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 14:37:20.082  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 14:37:20.084  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 14:37:20.090  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-09 14:37:20.092  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 14:37:22.658  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 14:37:22.692  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Not registering with Eureka server per configuration
+2022-11-09 14:37:22.719  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1668004642718 with initial instances count: 0
+2022-11-09 14:37:22.815  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CONTAINERIZED-GATEWAY with eureka with status UP
+2022-11-09 14:37:23.631  INFO [containerized-gateway,,] 1 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8762
+2022-11-09 14:37:23.643  INFO [containerized-gateway,,] 1 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8762
+2022-11-09 14:37:23.733  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Started ContainerizedGatewayApplication in 26.012 seconds (JVM running for 28.774)
+2022-11-09 14:37:52.690  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 14:37:52.695  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 14:37:52.701  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 14:37:52.702  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 14:37:52.703  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 14:37:52.704  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-11-09 14:37:52.705  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 14:37:52.727  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 14:42:20.109  INFO [containerized-gateway,,] 1 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 14:44:38.124  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CONTAINERIZED-GATEWAY with eureka with status DOWN
+2022-11-09 14:44:41.246  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-09 14:44:41.256  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-09 14:45:08.606  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Starting ContainerizedGatewayApplication v2.0.0 using Java 11.0.16 on 48e41ffe0c34 with PID 1 (/containerized-gateway.jar started by root in /)
+2022-11-09 14:45:08.637  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : No active profile set, falling back to default profiles: default
+2022-11-09 14:45:18.225  INFO [containerized-gateway,,] 1 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b94d7296-8abc-3464-bcda-1b437b80392f
+2022-11-09 14:45:20.243  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:45:20.257  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:45:20.278  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 14:45:26.384  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-11-09 14:45:26.400  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-11-09 14:45:26.403  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-11-09 14:45:26.406  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-11-09 14:45:26.415  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-11-09 14:45:26.417  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-11-09 14:45:26.420  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-11-09 14:45:26.423  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-11-09 14:45:26.426  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-11-09 14:45:26.427  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-11-09 14:45:26.432  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-11-09 14:45:26.435  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-11-09 14:45:26.439  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-11-09 14:45:28.838  INFO [containerized-gateway,,] 1 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2022-11-09 14:45:31.353  INFO [containerized-gateway,,] 1 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-11-09 14:45:31.992  WARN [containerized-gateway,,] 1 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-09 14:45:32.131  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-09 14:45:32.446  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-09 14:45:32.486  INFO [containerized-gateway,,] 1 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 14:45:32.669  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 14:45:32.673  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 14:45:32.675  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 14:45:32.683  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 14:45:32.685  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 14:45:32.686  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-09 14:45:32.690  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 14:45:34.641  INFO [containerized-gateway,,] 1 --- [main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery:8761/eureka/}, exception=I/O error on GET request for "http://discovery:8761/eureka/apps/": Connect to discovery:8761 [discovery/192.168.48.5] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to discovery:8761 [discovery/192.168.48.5] failed: Connection refused (Connection refused) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://discovery:8761/eureka/apps/": Connect to discovery:8761 [discovery/192.168.48.5] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to discovery:8761 [discovery/192.168.48.5] failed: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$598e5757.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.tanerdiler.microservice.gateway.ContainerizedGatewayApplication.main(ContainerizedGatewayApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to discovery:8761 [discovery/192.168.48.5] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 76 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 89 more
+
+2022-11-09 14:45:34.652  WARN [containerized-gateway,,] 1 --- [main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://discovery:8761/eureka/apps/": Connect to discovery:8761 [discovery/192.168.48.5] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to discovery:8761 [discovery/192.168.48.5] failed: Connection refused (Connection refused)
+2022-11-09 14:45:34.654  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONTAINERIZED-GATEWAY/48e41ffe0c34:containerized-gateway:8762 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$598e5757.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.tanerdiler.microservice.gateway.ContainerizedGatewayApplication.main(ContainerizedGatewayApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+
+2022-11-09 14:45:34.661  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from primary servers failed
+2022-11-09 14:45:34.664  WARN [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
+2022-11-09 14:45:34.666  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from backup servers failed
+2022-11-09 14:45:34.687  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Not registering with Eureka server per configuration
+2022-11-09 14:45:34.711  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1668005134707 with initial instances count: 0
+2022-11-09 14:45:34.751  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CONTAINERIZED-GATEWAY with eureka with status UP
+2022-11-09 14:45:35.365  INFO [containerized-gateway,,] 1 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8762
+2022-11-09 14:45:35.377  INFO [containerized-gateway,,] 1 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8762
+2022-11-09 14:45:35.503  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Started ContainerizedGatewayApplication in 30.514 seconds (JVM running for 33.785)
+2022-11-09 14:46:04.635  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 14:46:04.644  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 14:46:04.645  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 14:46:04.650  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 14:46:04.653  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 14:46:04.654  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-09 14:46:04.655  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 14:46:04.759  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 14:50:32.665  INFO [containerized-gateway,,] 1 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 14:55:32.694  INFO [containerized-gateway,,] 1 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 14:57:34.016  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CONTAINERIZED-GATEWAY with eureka with status DOWN
+2022-11-09 14:57:37.299  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-09 14:57:37.319  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-09 15:09:46.575  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Starting ContainerizedGatewayApplication v2.0.0 using Java 11.0.16 on d6469f9fccaf with PID 1 (/containerized-gateway.jar started by root in /)
+2022-11-09 15:09:46.608  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : No active profile set, falling back to default profiles: default
+2022-11-09 15:09:55.234  INFO [containerized-gateway,,] 1 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b94d7296-8abc-3464-bcda-1b437b80392f
+2022-11-09 15:09:56.571  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 15:09:56.581  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 15:09:56.596  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 15:10:01.614  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-11-09 15:10:01.623  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-11-09 15:10:01.627  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-11-09 15:10:01.629  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-11-09 15:10:01.634  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-11-09 15:10:01.636  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-11-09 15:10:01.640  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-11-09 15:10:01.642  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-11-09 15:10:01.643  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-11-09 15:10:01.648  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-11-09 15:10:01.656  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-11-09 15:10:01.658  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-11-09 15:10:01.661  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-11-09 15:10:03.471  INFO [containerized-gateway,,] 1 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2022-11-09 15:10:06.144  INFO [containerized-gateway,,] 1 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-11-09 15:10:06.863  WARN [containerized-gateway,,] 1 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-09 15:10:07.104  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-09 15:10:07.438  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-09 15:10:07.472  INFO [containerized-gateway,,] 1 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 15:10:07.593  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 15:10:07.596  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 15:10:07.597  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 15:10:07.600  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 15:10:07.601  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 15:10:07.603  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-09 15:10:07.604  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 15:10:09.494  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 15:10:09.515  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Not registering with Eureka server per configuration
+2022-11-09 15:10:09.537  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1668006609537 with initial instances count: 0
+2022-11-09 15:10:09.579  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CONTAINERIZED-GATEWAY with eureka with status UP
+2022-11-09 15:10:09.978  INFO [containerized-gateway,,] 1 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8762
+2022-11-09 15:10:09.982  INFO [containerized-gateway,,] 1 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8762
+2022-11-09 15:10:10.162  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Started ContainerizedGatewayApplication in 27.911 seconds (JVM running for 30.849)
+2022-11-09 15:10:39.512  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 15:10:39.517  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 15:10:39.518  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 15:10:39.519  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 15:10:39.520  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 15:10:39.521  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-11-09 15:10:39.521  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 15:10:39.541  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 15:15:07.605  INFO [containerized-gateway,,] 1 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 15:16:28.410  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CONTAINERIZED-GATEWAY with eureka with status DOWN
+2022-11-09 15:16:31.568  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-09 15:16:31.579  INFO [containerized-gateway,,] 1 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-09 15:17:15.776  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Starting ContainerizedGatewayApplication v2.0.0 using Java 11.0.16 on 36f501911414 with PID 1 (/containerized-gateway.jar started by root in /)
+2022-11-09 15:17:15.807  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : No active profile set, falling back to default profiles: default
+2022-11-09 15:17:30.390  INFO [containerized-gateway,,] 1 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b94d7296-8abc-3464-bcda-1b437b80392f
+2022-11-09 15:17:32.069  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 15:17:32.092  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 15:17:32.097  INFO [containerized-gateway,,] 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-09 15:17:37.360  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-11-09 15:17:37.376  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-11-09 15:17:37.385  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-11-09 15:17:37.389  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-11-09 15:17:37.397  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-11-09 15:17:37.400  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-11-09 15:17:37.405  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-11-09 15:17:37.407  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-11-09 15:17:37.409  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-11-09 15:17:37.413  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-11-09 15:17:37.421  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-11-09 15:17:37.423  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-11-09 15:17:37.424  INFO [containerized-gateway,,] 1 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-11-09 15:17:39.063  INFO [containerized-gateway,,] 1 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2022-11-09 15:17:41.153  INFO [containerized-gateway,,] 1 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-11-09 15:17:41.649  WARN [containerized-gateway,,] 1 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-09 15:17:41.804  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-09 15:17:42.193  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-09 15:17:42.219  INFO [containerized-gateway,,] 1 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 15:17:42.321  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 15:17:42.325  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 15:17:42.329  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 15:17:42.332  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 15:17:42.333  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 15:17:42.335  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-09 15:17:42.336  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 15:17:44.256  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 15:17:44.274  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Not registering with Eureka server per configuration
+2022-11-09 15:17:44.297  INFO [containerized-gateway,,] 1 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1668007064296 with initial instances count: 0
+2022-11-09 15:17:44.307  INFO [containerized-gateway,,] 1 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CONTAINERIZED-GATEWAY with eureka with status UP
+2022-11-09 15:17:44.835  INFO [containerized-gateway,,] 1 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8762
+2022-11-09 15:17:44.844  INFO [containerized-gateway,,] 1 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8762
+2022-11-09 15:17:45.132  INFO [containerized-gateway,,] 1 --- [main] c.t.m.g.ContainerizedGatewayApplication  : Started ContainerizedGatewayApplication in 33.446 seconds (JVM running for 37.474)
+2022-11-09 15:18:14.276  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-09 15:18:14.284  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-09 15:18:14.285  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-09 15:18:14.288  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-09 15:18:14.289  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-09 15:18:14.293  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-11-09 15:18:14.294  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-09 15:18:14.319  INFO [containerized-gateway,,] 1 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-09 15:22:42.334  INFO [containerized-gateway,,] 1 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 15:27:42.327  INFO [containerized-gateway,,] 1 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 15:32:42.497  INFO [containerized-gateway,,] 1 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 15:37:42.508  INFO [containerized-gateway,,] 1 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-09 15:42:42.522  INFO [containerized-gateway,,] 1 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
