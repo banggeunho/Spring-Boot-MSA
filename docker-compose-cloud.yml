@@ -1,0 +1,193 @@
+version: '3'
+services:
+
+  redis:
+    image: redis
+    command: redis-server --port 6379
+    container_name: redis
+    labels:
+      - "name=redis"
+      - "mode=standalone"
+    volumes:
+      - ./redis/:/data
+    ports:
+      - "6379:6379"
+    networks:
+      - msa
+
+  service-config:
+    image: qkdrmsgh73/service-config
+    container_name: service-config
+    platform: linux/amd64
+    build:
+      context: config-service
+      dockerfile: Dockerfile
+    ports:
+      - "8760:8760"
+    volumes:
+      - ./logs/config:/logs
+    restart: on-failure
+    depends_on:
+      - rabbitmq
+    networks:
+      - msa
+
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    ports:
+      # user
+      - "5672:5672"
+      # admin
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: sweep
+      RABBITMQ_DEFAULT_PASS: sweep
+    restart: on-failure
+    networks:
+      - msa
+
+  service-discovery:
+    image: qkdrmsgh73/service-discovery
+    container_name: service-discovery
+    build:
+      context: discovery-service
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    volumes:
+      - ./logs/discovery:/logs
+    restart: on-failure
+    depends_on:
+      - service-config
+      - zipkin
+    networks:
+      - msa
+
+  service-gateway:
+    image: qkdrmsgh73/service-gateway
+    container_name: service-gateway
+    platform: linux/amd64
+    build:
+      context: gateway-service
+      dockerfile: Dockerfile
+    ports:
+      - "8762:8762"
+    volumes:
+      - ./logs/gateway:/logs
+    depends_on:
+      - service-config
+      - service-discovery
+      - zipkin
+    restart: on-failure
+    networks:
+      - msa
+
+  service-auth:
+    image: qkdrmsgh73/service-auth
+    container_name: service-auth
+    platform: linux/amd64
+    build:
+      context: ./auth-service
+      dockerfile: Dockerfile
+    ports:
+      - "7500:2222"
+    volumes:
+      - ./logs/auth:/logs
+    restart: on-failure
+    depends_on:
+      - service-config
+      - service-discovery
+      - zipkin
+      - redis
+    networks:
+      - msa
+
+  member-service:
+    image: qkdrmsgh73/service-member
+    container_name: service-member
+    platform: linux/amd64
+    build:
+      context: ./member-service
+      dockerfile: Dockerfile
+    ports:
+      - "7501:2222"
+    volumes:
+      - ./logs/member:/logs
+    restart: on-failure
+    depends_on:
+      - service-config
+      - service-discovery
+      - zipkin
+      - redis
+    networks:
+      - msa
+
+  response-service:
+    image: qkdrmsgh73/service-response
+    container_name: service-response
+    platform: linux/amd64
+    build:
+      context: ./response-service
+      dockerfile: Dockerfile
+    ports:
+      - "7502:2222"
+    volumes:
+      - ./logs/response:/logs
+    restart: on-failure
+    depends_on:
+      - service-config
+      - service-discovery
+      - zipkin
+      - redis
+    networks:
+      - msa
+
+  survey-service:
+    image: qkdrmsgh73/service-survey
+    container_name: service-survey
+    platform: linux/amd64
+    build:
+      context: ./survey-service
+      dockerfile: Dockerfile
+    ports:
+      - "7503:2222"
+    volumes:
+      - ./logs/survey:/logs
+    restart: on-failure
+    depends_on:
+      - service-config
+      - service-discovery
+      - zipkin
+      - redis
+    networks:
+      - msa
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - 9090:9090
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    volumes:
+      - ./prometheus-service/config/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - 3001:3000
+    user: "104"
+
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: service-zipkin
+    ports:
+      - 9411:9411
+    networks:
+      - msa
+
+networks:
+  msa:
+    driver: bridge

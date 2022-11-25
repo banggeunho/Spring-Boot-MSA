@@ -1,0 +1,101 @@
+server:
+  port: 8760
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+#          uri: https://github.com/KSWA-SWEEP/Formduo-Config.git
+          uri: git@github.com:KSWA-SWEEP/Formduo-Config.git
+          ignore-local-ssh-settings: true
+          privateKey: |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
+          force-pull: true
+    bus:
+      enabled: true
+
+
+  rabbitmq:
+    host: rabbitmq
+#    rabbitmq
+    port: 5672
+    username: sweep
+    password: sweep
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: ${DISCOVER_URL:http://service-discovery:8761}/eureka/
+#    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http:
+          server:
+            requests: false
+      percentiles:
+        http:
+          server:
+            requests: 0.5, 0.9, 0.95, 0.99, 0.999
+
+    tags:
+      application: ${spring.application.name} # metric 정보에 대한 라벨링 설정

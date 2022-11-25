@@ -1,0 +1,171 @@
+server:
+  port: ${PORT:8762}
+
+spring:
+  application:
+    name: ${SERVICE_NAME:api-gateway}
+
+  zipkin:
+    base-url: ${ZIPKIN_URL:http://zipkin:9411}
+
+  cloud:
+    gateway:
+      httpclient:
+        # client <-> gateway <-> downstream / request, response logging
+        wiretap: true
+      default-filters:
+        - name: GlobalFilter
+          args:
+            preLogger: true
+            postLogger: true
+        - AddRequestHeader=X-Request-Header, req
+        - AddResponseHeader=X-Response-Header, res
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials Access-Control-Request-Method Access-Control-Request-Header
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: ["http://localhost:3000", "https://formduo.ddns.net"]
+            allow-credentials: true
+            allowedHeaders: '*'
+            allowedMethods:
+              - POST
+              - DELETE
+              - GET
+              - PUT
+              - OPTIONS
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+      routes:
+        - id: openapi
+          uri: http://localhost:${server.port}
+          predicates:
+            - Path=/v3/api-docs/**
+          filters:
+            - RewritePath=/v3/api-docs/(?<path>.*), /$\{path}/api-docs
+
+        - id: auth-service
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path=/auth/**
+          filters:
+            - RewritePath=/auth/?(?<segment>.*), /${segment}
+
+        - id: member-service
+          uri: lb://MEMBER-SERVICE
+          predicates:
+            - Path=/member/api/**
+          filters:
+            - RewritePath=/member/?(?<segment>.*), /${segment}
+            - JwtAuthenticationGatewayFilter
+
+        - id: survey-service
+          uri: lb://SURVEY-SERVICE
+          predicates:
+            - Path=/survey/api/**
+          filters:
+            - RewritePath=/survey/?(?<segment>.*), /${segment}
+            - JwtAuthenticationGatewayFilter
+
+        - id: response-service
+          uri: lb://RESPONSE-SERVICE
+          predicates:
+            - Path=/response/api/v1/response/**
+          filters:
+            - RewritePath=/response/?(?<segment>.*), /${segment}
+            - JwtAuthenticationGatewayFilter
+
+        - id: response-create
+          uri: lb://RESPONSE-SERVICE
+          predicates:
+            - Path=/response/api/v1/create
+          filters:
+            - RewritePath=/response/?(?<segment>.*), /${segment}
+
+        - id: member-apidocs
+          uri: lb://MEMBER-SERVICE
+          predicates:
+            - Path=/member/api-docs/**
+          filters:
+            - RewritePath=/member/?(?<segment>.*), /${segment}
+
+        - id: survey-apidocs
+          uri: lb://SURVEY-SERVICE
+          predicates:
+            - Path=/survey/api-docs/**
+          filters:
+            - RewritePath=/survey/?(?<segment>.*), /${segment}
+
+        - id: response-apidocs
+          uri: lb://RESPONSE-SERVICE
+          predicates:
+            - Path=/response/api-docs/**
+          filters:
+            - RewritePath=/response/?(?<segment>.*), /${segment}
+
+        - id: survey-repsonse
+          uri: lb://SURVEY-SERVICE
+          predicates:
+            - Path=/share/survey/**
+          filters:
+            - RewritePath=/share/survey/?(?<segment>.*), /${segment}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "gateway"
+
+  endpoint:
+    gateway:
+      enabled: true
+    health:
+      show-details: always
+
+
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http:
+          server:
+            requests: false
+      percentiles:
+        http:
+          server:
+            requests: 0.5, 0.9, 0.95, 0.99, 0.999
+      sla.http.server.requests: 500ms, 2000ms
+    tags:
+      application: ${spring.application.name}
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: ${DISCOVERY_URL:http://discovery:8761}/eureka
+
+
+# Increase the Hystrix timeout to 60s (globally)
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+jwt:
+  header: Authorization
+  secret: formduoinsweepformduoinsweepformduoinsweepformduoinsweepformduoinsweepformduoinsweepformduoinsweepformduoinsweepformduoinsweepformduoinsweep
+  access-token-expire-time: 1800000
+  refresh-token-expire-time: 6048000
+
+logging:
+  level:
+    org.springframework.cloud.gateway: trace
+#    reactor.netty: trace

@@ -1,0 +1,387 @@
+[2022-11-20 00:53:46:601][main] INFO  c.s.c.ConfigServerApplicationTests - Starting ConfigServerApplicationTests using Java 11.0.16.1 on bang-geunhoui-MacBookAir.local with PID 12696 (started by bang-geunho in /Users/bang-geunho/IdeaProjects/msa/formduo-msa/service-config)
+[2022-11-20 00:53:46:602][main] INFO  c.s.c.ConfigServerApplicationTests - The following 1 profile is active: "native"
+[2022-11-20 00:53:46:607][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+[2022-11-20 00:53:47:1207][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+[2022-11-20 00:53:47:1215][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+[2022-11-20 00:53:47:1265][main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=f85e6a0b-b725-3a97-b8f3-46e872a54b79
+[2022-11-20 00:53:47:1348][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 00:53:47:1355][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 00:53:48:2337][main] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'config-server.springCloudBusInput' has 1 subscriber(s).
+[2022-11-20 00:53:48:2558][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 21 endpoint(s) beneath base path '/actuator'
+[2022-11-20 00:53:48:2626][main] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 00:53:48:2627][main] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 1 subscriber(s).
+[2022-11-20 00:53:48:2627][main] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+[2022-11-20 00:53:48:2631][main] INFO  o.s.c.c.m.FileMonitorConfiguration - Not monitoring for local config changes
+[2022-11-20 00:53:48:2696][main] INFO  o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner - declaring queue for inbound: springCloudBus.anonymous.TAmeXkjxRxmuPvodWcEqzg, bound to: springCloudBus
+[2022-11-20 00:53:48:2698][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:53:48:2711][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:53:48:2727][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:53:48:2741][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.TAmeXkjxRxmuPvodWcEqzg.errors' has 1 subscriber(s).
+[2022-11-20 00:53:48:2742][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.TAmeXkjxRxmuPvodWcEqzg.errors' has 2 subscriber(s).
+[2022-11-20 00:53:48:2743][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:53:48:2744][main] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:53:48:2754][springCloudBus.anonymous.TAmeXkjxRxmuPvodWcEqzg-1] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:53:48:2756][main] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - started bean 'inbound.springCloudBus.anonymous.TAmeXkjxRxmuPvodWcEqzg'
+[2022-11-20 00:53:48:2791][main] INFO  c.s.c.ConfigServerApplicationTests - Started ConfigServerApplicationTests in 2.587 seconds (JVM running for 3.114)
+[2022-11-20 00:53:49:3083][SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+[2022-11-20 00:53:49:3083][SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+[2022-11-20 00:53:49:3083][SpringApplicationShutdownHook] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - stopped bean 'inbound.springCloudBus.anonymous.TAmeXkjxRxmuPvodWcEqzg'
+[2022-11-20 00:53:49:3088][SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'config-server.springCloudBus.anonymous.TAmeXkjxRxmuPvodWcEqzg.errors' has 1 subscriber(s).
+[2022-11-20 00:53:49:3090][SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 00:53:49:3091][SpringApplicationShutdownHook] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 0 subscriber(s).
+[2022-11-20 00:53:49:3091][SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+[2022-11-20 00:54:00:512][main] INFO  c.s.c.ConfigServerApplication - Starting ConfigServerApplication v0.0.1-SNAPSHOT using Java 11.0.16.1 on bang-geunhoui-MacBookAir.local with PID 13029 (/Users/bang-geunho/IdeaProjects/msa/formduo-msa/service-config/target/config-server-0.0.1-SNAPSHOT.jar started by bang-geunho in /Users/bang-geunho/IdeaProjects/msa/formduo-msa/service-config)
+[2022-11-20 00:54:00:510][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+[2022-11-20 00:54:00:516][main] INFO  c.s.c.ConfigServerApplication - The following 1 profile is active: "native"
+[2022-11-20 00:54:01:1288][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+[2022-11-20 00:54:01:1299][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+[2022-11-20 00:54:01:1365][main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=6f434148-a1e1-3eaa-8100-bed313a6df2f
+[2022-11-20 00:54:01:1439][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 00:54:01:1443][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 00:54:01:1633][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+[2022-11-20 00:54:01:1640][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+[2022-11-20 00:54:01:1640][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-11-20 00:54:01:1640][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2022-11-20 00:54:02:1685][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-11-20 00:54:02:1685][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1131 ms
+[2022-11-20 00:54:02:2524][main] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'config-server.springCloudBusInput' has 1 subscriber(s).
+[2022-11-20 00:54:03:2739][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 21 endpoint(s) beneath base path '/actuator'
+[2022-11-20 00:54:03:2803][main] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 00:54:03:2804][main] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 1 subscriber(s).
+[2022-11-20 00:54:03:2804][main] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+[2022-11-20 00:54:03:2804][main] INFO  o.s.c.c.m.FileMonitorConfiguration - Not monitoring for local config changes
+[2022-11-20 00:54:03:2886][main] INFO  o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner - declaring queue for inbound: springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw, bound to: springCloudBus
+[2022-11-20 00:54:03:2888][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:03:2898][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:03:2901][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:03:2914][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw.errors' has 1 subscriber(s).
+[2022-11-20 00:54:03:2915][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw.errors' has 2 subscriber(s).
+[2022-11-20 00:54:03:2916][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:03:2917][main] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:54:03:2927][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-1] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:03:2929][main] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - started bean 'inbound.springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw'
+[2022-11-20 00:54:03:2932][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+[2022-11-20 00:54:03:2952][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+[2022-11-20 00:54:03:2986][main] INFO  c.s.c.ConfigServerApplication - Started ConfigServerApplication in 2.864 seconds (JVM running for 3.156)
+[2022-11-20 00:54:08:8039][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-1] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:54:08:8042][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-1] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@44b29496: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:54:08:8043][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-2] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:13:13118][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-2] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:54:13:13120][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-2] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@5400c642: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:54:13:13121][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-3] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:18:18218][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-3] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:54:18:18218][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-3] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@3836e95b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:54:18:18219][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-4] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:23:23323][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-4] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:54:23:23324][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-4] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@23e19e51: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:54:23:23324][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-5] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:28:28427][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-5] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:54:28:28429][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-5] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@59b30157: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:54:28:28430][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-6] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:33:33537][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-6] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:54:33:33538][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-6] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@2a7bc142: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:54:33:33540][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-7] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:38:38637][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-7] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:54:38:38638][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-7] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@fd2acaa: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:54:38:38639][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-8] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:44:43739][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-8] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:54:44:43740][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-8] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@c0134a7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:54:44:43742][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-9] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:49:48832][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-9] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:54:49:48833][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-9] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@638e9f1f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:54:49:48835][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-10] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:54:53931][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-10] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:54:54:53932][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-10] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@481a67dd: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:54:54:53933][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-11] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:54:59:59011][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-11] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:54:59:59011][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-11] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@2c16b82b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:54:59:59012][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-12] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:55:04:64076][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-12] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:55:04:64077][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-12] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@315da707: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:55:04:64078][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-13] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:55:09:69171][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-13] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:55:09:69173][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-13] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@3e1b27a5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:55:09:69174][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-14] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:55:14:74260][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-14] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:55:14:74261][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-14] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@7c57ae8c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:55:14:74262][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-15] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:55:19:79353][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-15] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:55:19:79354][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-15] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@ac03ad3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:55:19:79355][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-16] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:55:24:84437][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-16] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:55:24:84437][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-16] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@20ef650c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:55:24:84438][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-17] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:55:29:89518][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-17] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:55:29:89518][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-17] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@4853511e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:55:29:89519][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-18] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:55:34:94622][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-18] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:55:34:94623][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-18] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@5b673643: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:55:34:94624][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-19] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:55:40:99733][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-19] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:55:40:99733][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-19] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@753037dc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:55:40:99734][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-20] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:55:45:104816][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-20] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 00:55:45:104817][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-20] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@2f721dbd: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:55:45:104819][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-21] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:55:50:109911][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-21] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@3bd9ee75: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 00:55:50:109912][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-22] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:55:50:109943][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-22] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1fde4f40:25/SimpleConnection@3e46770b [delegate=amqp://guest@127.0.0.1:5672/, localPort= 57110]
+[2022-11-20 00:55:50:109948][springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw-22] INFO  o.s.amqp.rabbit.core.RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+[2022-11-20 00:56:13:133048][http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-11-20 00:56:13:133049][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-11-20 00:56:13:133050][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2022-11-20 00:57:44:224344][SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+[2022-11-20 00:57:44:224360][SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+[2022-11-20 00:57:44:224361][SpringApplicationShutdownHook] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - stopped bean 'inbound.springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw'
+[2022-11-20 00:57:44:224370][SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'config-server.springCloudBus.anonymous.x1tS3K_zTc-eH3k51ZiGLw.errors' has 1 subscriber(s).
+[2022-11-20 00:57:44:224372][SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 00:57:44:224372][SpringApplicationShutdownHook] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 0 subscriber(s).
+[2022-11-20 00:57:44:224372][SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+[2022-11-20 00:57:47:733][main] INFO  c.s.c.ConfigServerApplication - Starting ConfigServerApplication v0.0.1-SNAPSHOT using Java 11.0.16.1 on bang-geunhoui-MacBookAir.local with PID 18492 (/Users/bang-geunho/IdeaProjects/msa/formduo-msa/service-config/target/config-server-0.0.1-SNAPSHOT.jar started by bang-geunho in /Users/bang-geunho/IdeaProjects/msa/formduo-msa/service-config)
+[2022-11-20 00:57:47:736][main] INFO  c.s.c.ConfigServerApplication - The following 1 profile is active: "native"
+[2022-11-20 00:57:47:739][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+[2022-11-20 00:57:47:1381][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+[2022-11-20 00:57:47:1388][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+[2022-11-20 00:57:47:1451][main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=6f434148-a1e1-3eaa-8100-bed313a6df2f
+[2022-11-20 00:57:47:1510][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 00:57:47:1514][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 00:57:47:1684][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+[2022-11-20 00:57:48:1701][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+[2022-11-20 00:57:48:1702][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-11-20 00:57:48:1702][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2022-11-20 00:57:48:1747][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-11-20 00:57:48:1747][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 982 ms
+[2022-11-20 00:57:48:2479][main] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'config-server.springCloudBusInput' has 1 subscriber(s).
+[2022-11-20 00:57:49:2723][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 21 endpoint(s) beneath base path '/actuator'
+[2022-11-20 00:57:49:2784][main] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 00:57:49:2784][main] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 1 subscriber(s).
+[2022-11-20 00:57:49:2784][main] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+[2022-11-20 00:57:49:2785][main] INFO  o.s.c.c.m.FileMonitorConfiguration - Not monitoring for local config changes
+[2022-11-20 00:57:49:2861][main] INFO  o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner - declaring queue for inbound: springCloudBus.anonymous.yWL0rDJAQQKz-CMAXxHVsw, bound to: springCloudBus
+[2022-11-20 00:57:49:2863][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 00:57:49:2949][main] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#17b64941:0/SimpleConnection@4acc5dff [delegate=amqp://guest@127.0.0.1:5672/, localPort= 57169]
+[2022-11-20 00:57:49:3016][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.yWL0rDJAQQKz-CMAXxHVsw.errors' has 1 subscriber(s).
+[2022-11-20 00:57:49:3016][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.yWL0rDJAQQKz-CMAXxHVsw.errors' has 2 subscriber(s).
+[2022-11-20 00:57:49:3036][main] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - started bean 'inbound.springCloudBus.anonymous.yWL0rDJAQQKz-CMAXxHVsw'
+[2022-11-20 00:57:49:3037][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+[2022-11-20 00:57:49:3051][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+[2022-11-20 00:57:49:3095][main] INFO  c.s.c.ConfigServerApplication - Started ConfigServerApplication in 2.99 seconds (JVM running for 3.267)
+[2022-11-20 00:58:00:14537][http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-11-20 00:58:00:14538][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-11-20 00:58:00:14540][http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2022-11-20 00:59:39:112705][http-nio-8088-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'class path resource [config/gateway.yml]' via location 'optional:classpath:/config/'
+[2022-11-20 01:00:21:155176][http-nio-8088-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'class path resource [config/gateway.yml]' via location 'optional:classpath:/config/'
+[2022-11-20 01:00:22:156487][http-nio-8088-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'class path resource [config/gateway.yml]' via location 'optional:classpath:/config/'
+[2022-11-20 01:07:22:576603][http-nio-8088-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'class path resource [config/gateway.yml]' via location 'optional:classpath:/config/'
+[2022-11-20 01:07:25:579097][http-nio-8088-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'class path resource [config/gateway.yml]' via location 'optional:classpath:/config/'
+[2022-11-20 01:17:47:1201488][SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+[2022-11-20 01:17:48:1202302][SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+[2022-11-20 01:17:48:1202303][SpringApplicationShutdownHook] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - stopped bean 'inbound.springCloudBus.anonymous.yWL0rDJAQQKz-CMAXxHVsw'
+[2022-11-20 01:17:48:1202313][SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'config-server.springCloudBus.anonymous.yWL0rDJAQQKz-CMAXxHVsw.errors' has 1 subscriber(s).
+[2022-11-20 01:17:48:1202316][SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 01:17:48:1202317][SpringApplicationShutdownHook] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 0 subscriber(s).
+[2022-11-20 01:17:48:1202318][SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+[2022-11-20 01:20:42:641][main] INFO  c.s.c.ConfigServerApplicationTests - Starting ConfigServerApplicationTests using Java 11.0.16.1 on bang-geunhoui-MacBookAir.local with PID 45054 (started by bang-geunho in /Users/bang-geunho/IdeaProjects/msa/formduo-msa/service-config)
+[2022-11-20 01:20:42:643][main] INFO  c.s.c.ConfigServerApplicationTests - The following 1 profile is active: "native"
+[2022-11-20 01:20:42:651][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+[2022-11-20 01:20:42:1263][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+[2022-11-20 01:20:42:1271][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+[2022-11-20 01:20:43:1327][main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=f85e6a0b-b725-3a97-b8f3-46e872a54b79
+[2022-11-20 01:20:43:1416][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 01:20:43:1424][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 01:20:44:2332][main] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'config-server.springCloudBusInput' has 1 subscriber(s).
+[2022-11-20 01:20:44:2549][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 21 endpoint(s) beneath base path '/actuator'
+[2022-11-20 01:20:44:2607][main] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 01:20:44:2607][main] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 1 subscriber(s).
+[2022-11-20 01:20:44:2608][main] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+[2022-11-20 01:20:44:2608][main] INFO  o.s.c.c.m.FileMonitorConfiguration - Not monitoring for local config changes
+[2022-11-20 01:20:44:2687][main] INFO  o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner - declaring queue for inbound: springCloudBus.anonymous.LSIBrXpyQEKLVSFkCB8dyQ, bound to: springCloudBus
+[2022-11-20 01:20:44:2689][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 01:20:44:2696][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 01:20:44:2698][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 01:20:44:2707][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.LSIBrXpyQEKLVSFkCB8dyQ.errors' has 1 subscriber(s).
+[2022-11-20 01:20:44:2708][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.LSIBrXpyQEKLVSFkCB8dyQ.errors' has 2 subscriber(s).
+[2022-11-20 01:20:44:2708][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 01:20:44:2709][main] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 01:20:44:2713][springCloudBus.anonymous.LSIBrXpyQEKLVSFkCB8dyQ-1] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 01:20:44:2714][main] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - started bean 'inbound.springCloudBus.anonymous.LSIBrXpyQEKLVSFkCB8dyQ'
+[2022-11-20 01:20:44:2739][main] INFO  c.s.c.ConfigServerApplicationTests - Started ConfigServerApplicationTests in 2.506 seconds (JVM running for 3.033)
+[2022-11-20 01:20:44:2955][SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+[2022-11-20 01:20:44:2955][SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+[2022-11-20 01:20:44:2955][SpringApplicationShutdownHook] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - stopped bean 'inbound.springCloudBus.anonymous.LSIBrXpyQEKLVSFkCB8dyQ'
+[2022-11-20 01:20:44:2958][SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'config-server.springCloudBus.anonymous.LSIBrXpyQEKLVSFkCB8dyQ.errors' has 1 subscriber(s).
+[2022-11-20 01:20:44:2960][SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 01:20:44:2960][SpringApplicationShutdownHook] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 0 subscriber(s).
+[2022-11-20 01:20:44:2960][SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+[2022-11-20 01:21:07:405][main] INFO  c.s.c.ConfigServerApplicationTests - Starting ConfigServerApplicationTests using Java 11.0.16.1 on bang-geunhoui-MacBookAir.local with PID 45588 (started by bang-geunho in /Users/bang-geunho/IdeaProjects/msa/formduo-msa/service-config)
+[2022-11-20 01:21:07:406][main] INFO  c.s.c.ConfigServerApplicationTests - The following 1 profile is active: "native"
+[2022-11-20 01:21:07:410][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+[2022-11-20 01:21:07:1013][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+[2022-11-20 01:21:07:1020][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+[2022-11-20 01:21:07:1073][main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=f85e6a0b-b725-3a97-b8f3-46e872a54b79
+[2022-11-20 01:21:07:1158][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 01:21:07:1165][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 01:21:08:2045][main] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'config-server.springCloudBusInput' has 1 subscriber(s).
+[2022-11-20 01:21:08:2255][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 21 endpoint(s) beneath base path '/actuator'
+[2022-11-20 01:21:09:2311][main] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 01:21:09:2311][main] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 1 subscriber(s).
+[2022-11-20 01:21:09:2311][main] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+[2022-11-20 01:21:09:2312][main] INFO  o.s.c.c.m.FileMonitorConfiguration - Not monitoring for local config changes
+[2022-11-20 01:21:09:2404][main] INFO  o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner - declaring queue for inbound: springCloudBus.anonymous.IJ9LAgUPSBe6TFdRsnLaog, bound to: springCloudBus
+[2022-11-20 01:21:09:2408][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 01:21:09:2415][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 01:21:09:2419][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 01:21:09:2441][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.IJ9LAgUPSBe6TFdRsnLaog.errors' has 1 subscriber(s).
+[2022-11-20 01:21:09:2442][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.IJ9LAgUPSBe6TFdRsnLaog.errors' has 2 subscriber(s).
+[2022-11-20 01:21:09:2443][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 01:21:09:2444][main] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused (Connection refused)
+[2022-11-20 01:21:09:2460][springCloudBus.anonymous.IJ9LAgUPSBe6TFdRsnLaog-1] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 01:21:09:2461][main] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - started bean 'inbound.springCloudBus.anonymous.IJ9LAgUPSBe6TFdRsnLaog'
+[2022-11-20 01:21:09:2493][main] INFO  c.s.c.ConfigServerApplicationTests - Started ConfigServerApplicationTests in 2.31 seconds (JVM running for 2.787)
+[2022-11-20 01:21:09:2740][SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+[2022-11-20 01:21:09:2741][SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+[2022-11-20 01:21:09:2741][SpringApplicationShutdownHook] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - stopped bean 'inbound.springCloudBus.anonymous.IJ9LAgUPSBe6TFdRsnLaog'
+[2022-11-20 01:21:09:2746][SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'config-server.springCloudBus.anonymous.IJ9LAgUPSBe6TFdRsnLaog.errors' has 1 subscriber(s).
+[2022-11-20 01:21:09:2748][SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 01:21:09:2748][SpringApplicationShutdownHook] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 0 subscriber(s).
+[2022-11-20 01:21:09:2748][SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+[2022-11-20 02:05:55:727][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+[2022-11-20 02:05:55:735][main] INFO  c.s.c.ConfigServerApplication - Starting ConfigServerApplication v0.0.1-SNAPSHOT using Java 11.0.16.1 on bang-geunhoui-MacBookAir.local with PID 98143 (/Users/bang-geunho/IdeaProjects/msa/formduo-msa/service-config/target/config-server-0.0.1-SNAPSHOT.jar started by bang-geunho in /Users/bang-geunho/IdeaProjects/msa/formduo-msa/service-config)
+[2022-11-20 02:05:55:736][main] INFO  c.s.c.ConfigServerApplication - The following 1 profile is active: "native"
+[2022-11-20 02:05:56:1465][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+[2022-11-20 02:05:56:1473][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+[2022-11-20 02:05:56:1537][main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=6f434148-a1e1-3eaa-8100-bed313a6df2f
+[2022-11-20 02:05:56:1599][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 02:05:56:1604][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 02:05:56:1772][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8760 (http)
+[2022-11-20 02:05:56:1779][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8760"]
+[2022-11-20 02:05:56:1779][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-11-20 02:05:56:1779][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2022-11-20 02:05:56:1826][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-11-20 02:05:56:1827][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1059 ms
+[2022-11-20 02:05:57:2518][main] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'config-server.springCloudBusInput' has 1 subscriber(s).
+[2022-11-20 02:05:57:2673][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 21 endpoint(s) beneath base path '/actuator'
+[2022-11-20 02:05:57:2716][main] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 02:05:57:2716][main] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 1 subscriber(s).
+[2022-11-20 02:05:57:2716][main] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+[2022-11-20 02:05:57:2716][main] INFO  o.s.c.c.m.FileMonitorConfiguration - Not monitoring for local config changes
+[2022-11-20 02:05:57:2780][main] INFO  o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner - declaring queue for inbound: springCloudBus.anonymous.McR6bqs6SyW7Rm6Mmzi3Cw, bound to: springCloudBus
+[2022-11-20 02:05:57:2782][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 02:05:57:2796][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 02:05:57:2797][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 02:05:57:2811][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.McR6bqs6SyW7Rm6Mmzi3Cw.errors' has 1 subscriber(s).
+[2022-11-20 02:05:57:2811][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.McR6bqs6SyW7Rm6Mmzi3Cw.errors' has 2 subscriber(s).
+[2022-11-20 02:05:57:2812][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 02:05:57:2812][main] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: java.net.UnknownHostException: rabbitmq
+[2022-11-20 02:05:57:2816][springCloudBus.anonymous.McR6bqs6SyW7Rm6Mmzi3Cw-1] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 02:05:57:2817][main] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - started bean 'inbound.springCloudBus.anonymous.McR6bqs6SyW7Rm6Mmzi3Cw'
+[2022-11-20 02:05:57:2817][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8760"]
+[2022-11-20 02:05:57:2821][main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8760 is already in use
+[2022-11-20 02:05:57:2822][main] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 02:05:57:2822][main] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 0 subscriber(s).
+[2022-11-20 02:05:57:2822][main] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+[2022-11-20 02:05:57:2827][main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8760"]
+[2022-11-20 02:05:57:2827][main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2022-11-20 02:05:57:2831][main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8760"]
+[2022-11-20 02:05:57:2831][main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8760"]
+[2022-11-20 02:05:57:2839][main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2022-11-20 02:05:57:2864][main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8760 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8760 or configure this application to listen on another port.
+
+[2022-11-20 02:06:11:537][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+[2022-11-20 02:06:11:544][main] INFO  c.s.c.ConfigServerApplication - Starting ConfigServerApplication v0.0.1-SNAPSHOT using Java 11.0.16.1 on bang-geunhoui-MacBookAir.local with PID 98526 (/Users/bang-geunho/IdeaProjects/msa/formduo-msa/service-config/target/config-server-0.0.1-SNAPSHOT.jar started by bang-geunho in /Users/bang-geunho/IdeaProjects/msa/formduo-msa/service-config)
+[2022-11-20 02:06:11:546][main] INFO  c.s.c.ConfigServerApplication - The following 1 profile is active: "native"
+[2022-11-20 02:06:12:1323][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+[2022-11-20 02:06:12:1332][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+[2022-11-20 02:06:12:1400][main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=6f434148-a1e1-3eaa-8100-bed313a6df2f
+[2022-11-20 02:06:12:1461][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 02:06:12:1465][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 02:06:12:1642][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8760 (http)
+[2022-11-20 02:06:12:1649][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8760"]
+[2022-11-20 02:06:12:1649][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-11-20 02:06:12:1649][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2022-11-20 02:06:12:1701][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-11-20 02:06:12:1701][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1120 ms
+[2022-11-20 02:06:13:2443][main] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'config-server.springCloudBusInput' has 1 subscriber(s).
+[2022-11-20 02:06:13:2625][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 21 endpoint(s) beneath base path '/actuator'
+[2022-11-20 02:06:13:2675][main] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 02:06:13:2675][main] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 1 subscriber(s).
+[2022-11-20 02:06:13:2675][main] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+[2022-11-20 02:06:13:2676][main] INFO  o.s.c.c.m.FileMonitorConfiguration - Not monitoring for local config changes
+[2022-11-20 02:06:13:2747][main] INFO  o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner - declaring queue for inbound: springCloudBus.anonymous.-jJABuHRRhaRgJe-zgZDgQ, bound to: springCloudBus
+[2022-11-20 02:06:13:2748][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 02:06:13:2753][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 02:06:13:2754][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 02:06:13:2765][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.-jJABuHRRhaRgJe-zgZDgQ.errors' has 1 subscriber(s).
+[2022-11-20 02:06:13:2766][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.-jJABuHRRhaRgJe-zgZDgQ.errors' has 2 subscriber(s).
+[2022-11-20 02:06:13:2766][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 02:06:13:2766][main] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: java.net.UnknownHostException: rabbitmq
+[2022-11-20 02:06:13:2770][springCloudBus.anonymous.-jJABuHRRhaRgJe-zgZDgQ-1] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 02:06:13:2772][main] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - started bean 'inbound.springCloudBus.anonymous.-jJABuHRRhaRgJe-zgZDgQ'
+[2022-11-20 02:06:13:2776][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8760"]
+[2022-11-20 02:06:13:2798][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8760 (http) with context path ''
+[2022-11-20 02:06:13:2844][main] INFO  c.s.c.ConfigServerApplication - Started ConfigServerApplication in 2.712 seconds (JVM running for 3.078)
+[2022-11-20 02:06:18:7874][springCloudBus.anonymous.-jJABuHRRhaRgJe-zgZDgQ-1] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@ae202c6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 02:06:18:7879][springCloudBus.anonymous.-jJABuHRRhaRgJe-zgZDgQ-2] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 02:06:18:8094][http-nio-8760-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-11-20 02:06:18:8094][http-nio-8760-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-11-20 02:06:18:8095][http-nio-8760-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2022-11-20 02:06:18:8111][http-nio-8760-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[2022-11-20 02:06:20:9711][http-nio-8760-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[2022-11-20 02:06:23:12972][springCloudBus.anonymous.-jJABuHRRhaRgJe-zgZDgQ-2] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@7f6ff68e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 02:06:23:12974][springCloudBus.anonymous.-jJABuHRRhaRgJe-zgZDgQ-3] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 02:06:26:15486][http-nio-8760-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[2022-11-20 02:06:28:18058][springCloudBus.anonymous.-jJABuHRRhaRgJe-zgZDgQ-3] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@4bed09ee: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+[2022-11-20 02:06:28:18060][springCloudBus.anonymous.-jJABuHRRhaRgJe-zgZDgQ-4] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 02:06:32:21950][SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+[2022-11-20 02:06:32:21951][SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+[2022-11-20 02:06:32:21951][SpringApplicationShutdownHook] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - stopped bean 'inbound.springCloudBus.anonymous.-jJABuHRRhaRgJe-zgZDgQ'
+[2022-11-20 02:06:32:21954][SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'config-server.springCloudBus.anonymous.-jJABuHRRhaRgJe-zgZDgQ.errors' has 1 subscriber(s).
+[2022-11-20 02:06:32:21956][SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 02:06:32:21956][SpringApplicationShutdownHook] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 0 subscriber(s).
+[2022-11-20 02:06:32:21957][SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+[2022-11-20 03:10:01:1028][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+[2022-11-20 03:10:01:1032][main] INFO  c.s.c.ConfigServerApplicationTests - Starting ConfigServerApplicationTests using Java 11.0.16.1 on bang-geunhoui-MacBookAir.local with PID 72495 (started by bang-geunho in /Users/bang-geunho/IdeaProjects/msa/formduo-msa/service-config)
+[2022-11-20 03:10:01:1037][main] INFO  c.s.c.ConfigServerApplicationTests - The following 1 profile is active: "native"
+[2022-11-20 03:10:03:2555][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+[2022-11-20 03:10:03:2568][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+[2022-11-20 03:10:03:2650][main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=f85e6a0b-b725-3a97-b8f3-46e872a54b79
+[2022-11-20 03:10:03:2799][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 03:10:03:2822][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 03:10:05:4436][main] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'config-server.springCloudBusInput' has 1 subscriber(s).
+[2022-11-20 03:10:05:4858][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 21 endpoint(s) beneath base path '/actuator'
+[2022-11-20 03:10:05:4977][main] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 03:10:05:4978][main] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 1 subscriber(s).
+[2022-11-20 03:10:05:4978][main] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+[2022-11-20 03:10:05:4979][main] INFO  o.s.c.c.m.FileMonitorConfiguration - Not monitoring for local config changes
+[2022-11-20 03:10:05:5150][main] INFO  o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner - declaring queue for inbound: springCloudBus.anonymous.QDGo3IzjQ4ufuaTVapw-Rg, bound to: springCloudBus
+[2022-11-20 03:10:05:5154][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 03:10:05:5161][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 03:10:05:5162][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 03:10:05:5179][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.QDGo3IzjQ4ufuaTVapw-Rg.errors' has 1 subscriber(s).
+[2022-11-20 03:10:05:5180][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.QDGo3IzjQ4ufuaTVapw-Rg.errors' has 2 subscriber(s).
+[2022-11-20 03:10:05:5180][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 03:10:05:5181][main] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start: java.net.UnknownHostException: rabbitmq
+[2022-11-20 03:10:05:5190][springCloudBus.anonymous.QDGo3IzjQ4ufuaTVapw-Rg-1] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+[2022-11-20 03:10:05:5191][main] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - started bean 'inbound.springCloudBus.anonymous.QDGo3IzjQ4ufuaTVapw-Rg'
+[2022-11-20 03:10:05:5240][main] INFO  c.s.c.ConfigServerApplicationTests - Started ConfigServerApplicationTests in 4.827 seconds (JVM running for 5.887)
+[2022-11-20 03:10:06:5669][SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+[2022-11-20 03:10:06:5669][SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+[2022-11-20 03:10:06:5670][SpringApplicationShutdownHook] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - stopped bean 'inbound.springCloudBus.anonymous.QDGo3IzjQ4ufuaTVapw-Rg'
+[2022-11-20 03:10:06:5676][SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'config-server.springCloudBus.anonymous.QDGo3IzjQ4ufuaTVapw-Rg.errors' has 1 subscriber(s).
+[2022-11-20 03:10:06:5678][SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 03:10:06:5681][SpringApplicationShutdownHook] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'config-server.errorChannel' has 0 subscriber(s).
+[2022-11-20 03:10:06:5682][SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
